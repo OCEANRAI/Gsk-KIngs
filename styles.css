@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: rgb(19, 16, 16);
+    padding: 1px;
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.logo {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+h1 {
+    color: rgb(165, 124, 0);
+    padding: 1px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0;
+}
+
+.animated-text {
+    animation: animateText 6s infinite;
+
+}
+
+@keyframes animateText {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h3 {
+    font-size: large;
+    color: rgb(165, 124, 0);
+
+}
+
+p {
+    color: white;
+}
+
+body {
+    background: black;
+}
+
+.download-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.download-button {
+    width: 200px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+}
+
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    max-width: 800px;
+    /* Adjust this value as needed */
+    margin: 0 auto;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 600px) {
+    .image-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .image-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+footer {
+    background: rgb(19, 16, 16);
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: black;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+
+
+}
+
+.socials {
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+
+
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.socials a i {
+    font-size: 1.1rem;
+}
+
+.socials a:hover i {
+    color: skyblue;
+}
+
+.footer-bottom {
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
